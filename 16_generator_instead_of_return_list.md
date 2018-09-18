@@ -56,7 +56,7 @@ def index_file(handle):
     offset = 0
     for line in handle:
         if line:
-            yidle offset
+            yield offset
         for letter in line:
             offset +=1
             if letter == ' ':
